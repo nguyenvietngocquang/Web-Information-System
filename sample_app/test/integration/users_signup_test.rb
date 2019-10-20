@@ -12,9 +12,9 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_template 'users/new'
     assert_select 'div#error_explanation'
     assert_select 'div.alert.alert-danger'
-    assert_select "li", "Name can't be blank."
-    assert_select "li", "Email is invalid."
-    assert_select "li", "Password confirmation doesn't match Password."
+    assert_select "li", "Name can't be blank"
+    assert_select "li", "Email is invalid"
+    assert_select "li", "Password confirmation doesn't match Password"
   end
 
   test "valid signup information" do
@@ -27,6 +27,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     end
     follow_redirect!
     assert_template 'users/show'
-    assert_not flash.FILL_IN
+    assert_not flash.empty?
   end
 end
