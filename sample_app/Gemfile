@@ -7,6 +7,10 @@ ruby '2.6.3'
 gem 'rails', '~> 6.0.0'
 # Use Faker
 gem 'faker', '~> 2.7.0'
+# Use Carrier Wave
+gem 'carrierwave', '~> 2.0.0'
+# Use Mini Magick
+gem 'mini_magick', '~> 4.9.5'
 # Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate', '~> 3.1.6'
 # Use Bootstrap will_paginate
@@ -41,6 +45,11 @@ gem 'rails-controller-testing'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+
+group :production do
+  gem 'pg',  '~> 1.1.4'
+  gem 'fog', '~> 1.42.0'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
