@@ -8,7 +8,7 @@ gem 'rails', '~> 6.0.0'
 # Use Faker
 gem 'faker', '~> 2.7.0'
 # Use Carrier Wave
-gem 'carrierwave', '~> 2.0.0'
+gem 'carrierwave', '~> 2.1.1'
 # Use Mini Magick
 gem 'mini_magick', '~> 4.9.5'
 # Gemfile for Rails 3+, Sinatra, and Merb
